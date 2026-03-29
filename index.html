@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivana Zandoná | Portafolio Personal</title>
+    <!-- Vinculo a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Vinculo a CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ivana Zandoná</h1>
+        <p>Futura Técnica en Tecnologías de la Información y Desarrollo de Software</p>
+    </header>
+
+    <nav>
+        <!-- Boton para celulares -->
+        <button class="menu-hamburguesa" id="btn-menu">&#9776;</button>
+        
+        <!-- Agregamos ID "menu-links" para usarlo en JS (pequeña funcion con JS para hacer responsive el menu) -->
+        <ul id="menu-links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tarjetas">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#peliculas">Películas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Comentario 1 - Sección de presentación personal. 
+             Mejora a futuro: Esta estructura actual "one-page" responde a lo solicitado para la entrega, pero a futuro planeo separar la 
+             información personal de habilidades específicas y los hobbies en subpáginas distintas para dejar este index exclusivamente 
+             como un portfolio profesional de tecnología. -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="perfil-contenedor">
+                <img src="./img/avatar1.png" alt="Avatar personal" class="img-perfil">
+                <p>
+                    Mi nombre es Ivana Zandoná. Soy estudiante avanzada en Tecnologías de la Información y Desarrollo de Software, con formación 
+                    académica en desarrollo backend (Java, C#, MySQL) y frontend (HTML, CSS, JavaScript, Bootstrap). Me destaco por mi autonomía y capacidad 
+                    para trabajar en equipo. Poseo pensamiento lógico y crítico, una sólida capacidad de adaptación y comunicación asertiva. Mi enfoque está 
+                    orientado hacia el aprendizaje constante y la resolución de problemas. Busco aportar valor en proyectos tecnológicos mientras continúo 
+                    desarrollándome profesionalmente en un entorno dinámico.
+                </p>
+            </div>
+        </section>
+
+        <!-- Comentario 2 - Grid de tarjetas.
+             Mejora a futuro: Reemplazar las imágenes por capturas de pantalla reales (mockups) de mis repositorios y sistemas funcionando, 
+             e implementar un modal (ventana emergente) para ver los detalles del código sin salir de la página. -->
+        <section id="tarjetas">
+            <h2>Proyectos académicos destacados</h2>
+            <div class="grid-container">
+                <article class="tarjeta">
+                    <img src="./img/proyecto-api.jpg" alt="Imagen representativa de una API">
+                    <div class="tarjeta-contenido">
+                        <h3>API REST </h3>
+                        <p>Desarrollo de una API REST en Java con Spring Boot, implementando operaciones CRUD y persistencia en base de datos. </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/tienda.png" alt="Sitio Web Roll Argent">
+                    <div class="tarjeta-contenido">
+                        <h3>Sitio Web de E-commerce</h3>
+                        <p>Sitio Web de E-commerce "Roll Argent": Diseño y desarrollo de un sitio web estático para una tienda de patinaje, utilizando HTML, 
+                            CSS, Bootstrap 5 y un poco de JavaScript. Enfocado en diseño visual, experiencia de usuario y navegación responsive.</p>
+                        <a href="https://drive.google.com/drive/folders/1fTfg7x2keZBblXOV3J8h89BzaRWUVSWT?usp=sharing" target="_blank" class="link-tarjeta">Ver imágenes del proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades técnicas y personales</h2>
+            <div class="tabla-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Área / Tecnología</th>
+                            <th>Nivel</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Automatización RPA</strong><br>Blue Prism</td>
+                            <td>Profesional</td>
+                            <td>Experiencia laboral actual en el diseño, desarrollo e implementación de robots de software para la automatización 
+                                de procesos de negocio.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lenguajes y Desarrollo Web</strong><br>Java, C#, HTML, CSS, JavaScript, SQL</td>
+                            <td>Intermedio</td>
+                            <td>Desarrollo de lógica backend, maquetado frontend y consultas estructuradas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bases de Datos</strong><br>MySQL</td>
+                            <td>Intermedio</td>
+                            <td>Creación de bases, consultas complejas (JOINs y subconsultas), modelado y relaciones de datos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frameworks y Librerías</strong><br>Hibernate, JPA, Maven, JDBC, ADO.NET, Bootstrap</td>
+                            <td>Intermedio</td>
+                            <td>Manejo de persistencia de datos (ORM), conexiones a bases y diseño web responsivo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arquitectura y Metodologías</strong><br>POO, MVC, Arquitectura en capas</td>
+                            <td>Intermedio</td>
+                            <td>Diseño de software estructurado, buenas prácticas y conocimientos de metodologías ágiles/tradicionales.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Herramientas y Entornos</strong><br>Git, VS Code, NetBeans, Visual Studio, Spring Tools</td>
+                            <td>Intermedio</td>
+                            <td>Control de versiones seguro y manejo de los principales IDEs del mercado.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Habilidades Personales (Soft Skills)</strong></td>
+                            <td>Avanzado</td>
+                            <td>Autonomía, trabajo en equipo, pensamiento lógico y crítico, adaptación y comunicación asertiva.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Herramientas Complementarias</strong><br>Excel, Word, Canva, CapCut</td>
+                            <td>Intermedio</td>
+                            <td>Redacción de documentación y edición multimedia.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Comentario 3 - Sección de películas favoritas.
+             Mejora a futuro: Consumir una API externa (como TMDB) usando JavaScript para traer automáticamente los posters, sinopsis oficiales 
+             y calificaciones actualizadas, en lugar de tener los datos fijos en el HTML. -->
+        <section id="peliculas">
+            <h2>Películas Favoritas</h2>
+            <div class="grid-container">
+                <article class="tarjeta">
+                    <img src="./img/coherence-poster.jpg" alt="Póster de la película Coherence">
+                    <div class="tarjeta-contenido">
+                        <h3>Coherence (2013)</h3>
+                        <p>Un thriller psicológico de ciencia ficción atrapante. Un grupo de amigos cena durante el paso cercano de un cometa, 
+                            lo que provoca la ruptura de la realidad y la superposición de universos paralelos. Tras un apagón, descubren que otra casa cercana 
+                            es una réplica idéntica, desencadenando paranoia, desconfianza y un juego de suplantación entre versiones alternativas de sí mismos.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/lazos-de-vida.jpg" alt="Póster de la película Lazos de Vida">
+                    <div class="tarjeta-contenido">
+                        <h3>Lazos de vida (One Life, 2023) </h3>
+                        <p>Una historia profundamente conmovedora basada en hechos reales. Es un drama histórico basado en hechos reales que narra 
+                            cómo Nicholas Winton, un corredor de bolsa británico, salvó a 669 niños (principalmente judíos) de Praga antes de la 
+                            Segunda Guerra Mundial. La película alterna entre 1938 y los años 80, destacando la valentía, la humanidad y el impacto duradero de sus acciones. </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/isla-siniestra.jpg" alt="Póster de la película La Isla Siniestra">
+                    <div class="tarjeta-contenido">
+                        <h3>La Isla Siniestra (Shutter Island, 2010)</h3>
+                        <p>Un thriller psicológico que narra la investigación de dos agentes federales en 1954 sobre la desaparición de una paciente en un hospital psiquiátrico remoto, sumergiéndose en una trama de paranoia, secretos médicos y traumas personales.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Comentario 4 - Formulario de contacto.
+             Mejora a futuro: Implementar validaciones avanzadas del lado del cliente con JavaScript y conectar este formulario a un servicio 
+             backend para procesar un envío real. -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" name="tel" placeholder="+54 11 1234 5678">
+                </div>
+                <div class="campo"> 
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ivana Zandoná. Portafolio creado para la Práctica Formativa Obligatoria 1 - Desarrollo de Sistemas Web Front End - IFTS N.°29.</p>
+        <p>
+            <a href="https://github.com/IvanaZandona?tab=repositories" target="_blank" rel="noopener noreferrer">Repositorio del proyecto en GitHub</a> | 
+            <a href="" target="_blank" rel="noopener noreferrer">Web publicada en Vercel</a> |             
+            <a href="https://www.linkedin.com/in/ivana-maribel-zandon%C3%A1" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
+
+        </p>
+    </footer>
+
+    <!--Cometario 5: Script para el menu hamburguesa 
+        Mejora a futuro: Mover esta función a un archivo corresposdiente a JS. -->
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const menuLinks = document.getElementById('menu-links');
+
+        btnMenu.addEventListener('click', () => {
+            menuLinks.classList.toggle('activo');
+        });
+    </script>
+
+</body>
+</html>
